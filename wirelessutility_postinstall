@@ -1,0 +1,3 @@
+#!/bin/bash
+
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Ralink Wireless Utility/WirelessUtility.app", hidden:true}'

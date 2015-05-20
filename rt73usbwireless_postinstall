@@ -1,0 +1,11 @@
+#!/bin/bash
+
+sudo touch /System/Library/Extensions
+sudo kextcache -system-prelinked-kernel
+if [ "$?" != "0" ];then
+exit 1
+fi
+sudo kextcache -system-caches
+if [ "$?" != "0" ];then
+exit 1
+fi
